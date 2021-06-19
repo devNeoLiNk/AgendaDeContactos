@@ -1,0 +1,157 @@
+/* Custom Properties */
+:root {
+    --fuenteRegular: 'Krub', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteRegular);
+    font-size: 1.6rem;
+    /* line-height: 2.5; */
+}
+
+.container-header {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    min-height: calc(100vh - 98px);
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 3rem;
+}
+
+.formulario {
+    width: min(60rem, 100%);
+    margin: 0 auto; 
+}
+
+.campo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;  
+
+}
+
+.campo__input {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+}
+/* .campo__input:active {
+    border-bottom: 1px solid #1DA1F2;
+} */
+.campo__input:focus {
+    border-bottom: 1px solid #1DA1F2;
+}
+
+.campo2 {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    background-color: #1DA1F2;
+    width: 80%;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .3rem;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+
+/* Boton aviso */
+.warning {
+    color: orangered;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+.guardado {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.vacio {
+    background-color: #fbc02d;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 4rem;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    
+    padding: 2rem;
+    
+}
+@media (min-width: 768px) {
+    .vacio {
+        width: auto;
+    }
+}
+
+.listado-tareas {
+    display: flex;
+    flex-direction: column;
+    
+}
+@media (min-width: 769px) {
+    .lista-contactos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+}
+.lista-contactos {
+    text-align: center;
+    line-height: 1.5rem;
+    margin-top: 3rem;
+}
+@media (min-width: 769px) {
+    .icono {
+        margin-top: 11px; 
+    }
+}
+.icono {
+    cursor: pointer;
+    color: #ff2825;
+}
+
+.footer {
+    background: yellowgreen;
+    height: 50px;
+    text-align: center;
+    padding-top: 3px;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+

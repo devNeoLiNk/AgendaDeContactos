@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contactos</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link preload="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="container-header">
+        <h1>Agenda de contactos</h1>
+    </header>
+    <main class="container">
+        <form class="formulario">
+            <div class="campo">
+                <input class="campo__input nombre" maxlength="20" id="nombre"type="text" placeholder="Nombre">
+            </div>
+    
+            <div class="campo">
+                <input class="campo__input telefono" maxlength="20" id="telefono" type="tel" placeholder="Teléfono">
+            </div>
+    
+            <div class="campo">
+                <input class="campo__input direccion" maxlength="30" id="direccion" type="text" placeholder="Dirección">
+            </div>
+    
+            <div class="campo2">
+                <input class="boton" type="submit" value="Agregar contacto">
+            </div>
+        </form>
+
+        <div class="listado-tareas">
+            
+         </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2021 Agenda de Contactos.</p> 
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
